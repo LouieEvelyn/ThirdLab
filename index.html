@@ -13,33 +13,35 @@
 			<h3>Current date and time:</h3>
    			<span id="dateandtime"></span>
 			<p>Hello! This site is to record current the date and time.</p>
-			<script>
-        			function setBackground() {
-					const body = document.querySelector('body');
-            				const date = new Date();
-            				const hours = date.getHours();
-            				let className;
-
-            				if (hours >= 6 && hours < 12) {
-                				body.style.backgroundColor = '#D4BFF9';
-            				} else if (hours >= 12 && hours < 18) {
-               				 	body.style.backgroundColor = '#DEFABB';
-            				} else {
-                				body.style.backgroundColor = '#FFDDB0';
-            				}
-
-        			}
-
-        			function displayDate() {
-            				const date = new Date();
-            				const dateString = date.toLocaleString();
-            				document.querySelector('#dateandtime').textContent = dateString;
-       				}
-
-        			setInterval(displayDate, 1000);
-				setInterval(setBackground, 3600000);
-    			</script>
     		</div>
+
+		<script>
+        		function setBackground() {
+				const body = document.querySelector('body');
+            			const date = new Date();
+            			const hours = date.getHours();
+            			let className;
+
+            			if (hours >= 6 && hours < 12) {
+                			body.style.backgroundColor = '#D4BFF9';
+            			} else if (hours >= 12 && hours < 18) {
+               			 	body.style.backgroundColor = '#DEFABB';
+            			} else {
+                			body.style.backgroundColor = '#FFDDB0';
+            			}
+
+        		}
+
+        		function displayDate() {
+            			const date = new Date();
+            			const dateString = date.toLocaleString();
+            			document.querySelector('#dateandtime').textContent = dateString;
+       			}
+
+        		setInterval(displayDate, 1000);
+			setInterval(setBackground, 3600000);
+    		</script>
+		
     		<div id="date"></div>
 	</body>
 </html>
