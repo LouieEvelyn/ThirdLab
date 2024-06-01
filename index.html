@@ -20,14 +20,13 @@
             				let className;
 
             				if (hours >= 6 && hours < 12) {
-                				className = 'morning';
+                				body.style.backgroundColor = '#D4BFF9';
             				} else if (hours >= 12 && hours < 18) {
-               				 	className = 'afternoon';
+               				 	body.style.backgroundColor = '#DEFABB';
             				} else {
-                				className = 'evening';
+                				body.style.backgroundColor = '#FFDDB0';
             				}
 
-            				document.body.className = className;
         			}
 
         			function displayDate() {
