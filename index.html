@@ -4,7 +4,16 @@
 		<link rel="stylesheet" type="text/css" href="ThirdLab.css">
 		<meta charset="UTF-8">
 		<title>Date and Time</title>
-    		<script>
+	</head>
+
+	<body>
+		<div class="text">
+			<h1>My Book Reviews</h1>
+			<h2>Evelyn Louie 501124587</h2>
+			<h3>Current date and time:</h3>
+   			<span id="dateandtime"></span>
+			<p>Hello! This site is to record current the date and time.</p>
+			<script>
         		function setBackground() {
             			const date = new Date();
             			const hours = date.getHours();
@@ -30,15 +39,6 @@
         		setInterval(displayDate, 1000);
 			setInterval(serBackground, 3600000);
     		</script>
-	</head>
-
-	<body>
-		<div class="text">
-			<h1>My Book Reviews</h1>
-			<h2>Evelyn Louie 501124587</h2>
-			<h3>Current date and time:</h3>
-   			<span id="dateandtime"></span>
-			<p>Hello! This site is to record current the date and time.</p>
     		</div>
     <div id="date"></div>
 	</body>
