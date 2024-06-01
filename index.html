@@ -38,6 +38,8 @@
             			document.querySelector('#dateandtime').textContent = dateString;
        			}
 			window.onload=function(){
+				displayDate(); 
+            			setBackground();
         			setInterval(displayDate, 1000);
 				setInterval(setBackground, 3600000);
 			}
