@@ -23,10 +23,10 @@
             			const hours = date.getHours();
             			let className;
 
-            			if (hours >= 6 && hours < 12) {
+            			if (hours >= 6 && hours <=12) {
                 			body.style.backgroundColor = '#D4BFF9';
 					document.getElementById('hourimage').src = 'morning.png';
-            			} else if (hours >= 12 && hours < 18) {
+            			} else if (hours > 12 && hours < 18) {
                			 	body.style.backgroundColor = '#DEFABB';
 					document.getElementById('hourimage').src = 'noon.png';
             			} else {
