@@ -23,6 +23,10 @@ h1 {
         color: #000435;
 }
 
+h1 span { 
+    background-color: white; 
+}
+
 h2 {
         font-size: 1.5em;
         margin-bottom: 0.5em;
