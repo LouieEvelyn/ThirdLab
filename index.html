@@ -14,31 +14,31 @@
    			<span id="dateandtime"></span>
 			<p>Hello! This site is to record current the date and time.</p>
 			<script>
-        		function setBackground() {
-            			const date = new Date();
-            			const hours = date.getHours();
-            			let className;
+        			function setBackground() {
+            				const date = new Date();
+            				const hours = date.getHours();
+            				let className;
 
-            			if (hours >= 6 && hours < 12) {
+            				if (hours >= 6 && hours < 12) {
                 				className = 'morning';
-            			} else if (hours >= 12 && hours < 18) {
-               				 className = 'afternoon';
-            			} else {
+            				} else if (hours >= 12 && hours < 18) {
+               				 	className = 'afternoon';
+            				} else {
                 				className = 'evening';
-            			}
+            				}
 
-            			document.body.className = className;
-        		}
+            				document.body.className = className;
+        			}
 
-        		function displayDate() {
-            			const date = new Date();
-            			const dateString = date.toLocaleString();
-            			document.querySelector('#dateandtime').textContent = dateString;
-       			}
+        			function displayDate() {
+            				const date = new Date();
+            				const dateString = date.toLocaleString();
+            				document.querySelector('#dateandtime').textContent = dateString;
+       				}
 
-        		setInterval(displayDate, 1000);
-			setInterval(setBackground, 3600000);
-    		</script>
+        			setInterval(displayDate, 1000);
+				setInterval(setBackground, 3600000);
+    			</script>
     		</div>
     <div id="date"></div>
 	</body>
