@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="secondwebsite.css">
+		<meta charset="UTF-8">
+		<title>My Book Reviews</title>
+    <script>
+        function setBackground() {
+            const date = new Date();
+            const hours = date.getHours();
+            let className;
+
+            if (hours >= 6 && hours < 12) {
+                className = 'morning';
+            } else if (hours >= 12 && hours < 18) {
+                className = 'afternoon';
+            } else {
+                className = 'evening';
+            }
+
+            document.body.className = className;
+        }
+
+        function displayDate() {
+            const date = new Date();
+            const dateString = date.toDateString();
+            document.getElementById('date').innerText = `Current Date: ${dateString}`;
+        }
+
+        window.onload = function() {
+            setBackground();
+            displayDate();
+        }
+    </script>
+	</head>
+
+	<body>
+		<div class="text">
+			<h1>My Book Reviews</h1>
+			<h2>Evelyn Louie 501124587</h2>
+			<p>Hello! This site is to record my reviews and ratings of books I have read! Below you will find a table that includes the titles, authors, ratings and reasonings of each book. Below them I included some of my favourite pictures or cover arts from said books.</p>
+    </div>
+    <div id="date"></div>
+	</body>
+</html>
