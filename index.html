@@ -8,11 +8,13 @@
 
 	<body>
 		<div class="text">
+			<img id="hourimage" src="" alt="Image based on time">
 			<h1><span></span>Updating...</span></h1>
 			<h2>Evelyn Louie 501124587</h2>
 			<h3>Current date and time:</h3>
    			<span id="dateandtime"></span>
 			<p>Hello! This site is displaying the current date and time.</p>
+			<img id="car-image" src="" alt="Car Image">
     		</div>
 
 		<script>
@@ -24,10 +26,13 @@
 
             			if (hours >= 6 && hours < 12) {
                 			body.style.backgroundColor = '#D4BFF9';
+					document.getElementById('hourimage').src = 'morning.jpg';
             			} else if (hours >= 12 && hours < 18) {
                			 	body.style.backgroundColor = '#DEFABB';
+					document.getElementById('hourimage').src = 'noon.jpg';
             			} else {
                 			body.style.backgroundColor = '#FFDDB0';
+					document.getElementById('hourimage').src = 'night.jpg';
             			}
 
         		}
@@ -44,7 +49,5 @@
 				setInterval(setBackground, 3600000);
 			}
     		</script>
-		
-    		<div id="date"></div>
 	</body>
 </html>
