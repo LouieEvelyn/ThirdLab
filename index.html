@@ -37,9 +37,10 @@
             			const dateString = date.toLocaleString();
             			document.querySelector('#dateandtime').textContent = dateString;
        			}
-
-        		setInterval(displayDate, 1000);
-			setInterval(setBackground, 3600000);
+			window.onload=function(){
+        			setInterval(displayDate, 1000);
+				setInterval(setBackground, 3600000);
+			}
     		</script>
 		
     		<div id="date"></div>
